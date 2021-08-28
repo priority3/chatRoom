@@ -1,0 +1,17 @@
+@media (min-width: 768px) {
+    .card-room {
+        width: 50%;
+    }
+    .panel-container {
+        border-right: 1px solid rgba(0, 0, 0, 0.125);
+    }
+}
+
+@media (max-width: 768px) {
+    .card-room {
+        width: 100%;
+    }
+    .panel-container {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    }
+}
