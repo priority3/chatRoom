@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+        />
+        <link rel="stylesheet" href="/style.css" type="text/css" />
+    </head>
+    <body>
+        <div class="container mt-2">
+            <div class="card">
+                <div class="card-head bg-success">
+                    <div
+                        class="
+                            d-flex
+                            justify-content-between
+                            align-item-center
+                            text-light
+                            px-3
+                        "
+                    >
+                        <span><i class="bi bi-gear"></i>&nbsp;聊天室</span>
+                        <span
+                            ><a href="./login.html" class="text-light"
+                                >离开聊天室&nbsp;</a
+                            ><i class="bi bi-arrow-right"></i
+                        ></span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12 panel-container">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <i class="bi bi-door-open"></i
+                                    >&nbsp;房间列表
+                                </li>
+                                <li class="list-group-item">A second item</li>
+                                <li class="list-group-item">A third item</li>
+                                <li class="list-group-item">A fourth item</li>
+                                <li class="list-group-item">And a fifth one</li>
+                            </ul>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <i class="bi bi-person"></i>&nbsp;用户列表
+                                </li>
+                                <li class="list-group-item">A second item</li>
+                                <li class="list-group-item">A third item</li>
+                                <li class="list-group-item">A fourth item</li>
+                                <li class="list-group-item">And a fifth one</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-8 col-sm-12" id="message-container">
+                            <div class="d-flex justify-content-end my-3">
+                                <div class="card w-50 bg-success p-2">hi</div>
+                            </div>
+                            <div class="d-flex justify-content-stard">
+                                <div class="card w-50 p-2">hi</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <form action="#" id="chat-form">
+                        <div class="input-group mb-3">
+                            <input
+                                id="msg"
+                                type="text"
+                                class="form-control"
+                                placeholder="请输入消息"
+                            />
+                            <div class="btn btn-success">
+                                <i class="bi b-cursor"></i> &nbsp; 发送
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="socket.io/socket.io.js"></script>
+        <script src="qs.js"></script>
+        <script src="./main.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
